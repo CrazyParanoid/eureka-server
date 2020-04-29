@@ -1,0 +1,18 @@
+spring.profiles.active: develop
+spring.main.allow-bean-definition-overriding: true
+
+server:
+  port: 8081
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/
+    register-with-eureka: false
+    fetch-registry: false
